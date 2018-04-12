@@ -1,0 +1,20 @@
+example.com, www.example.com  {
+  tls example@gmail.com
+
+  log /var/log/caddy.log
+
+  proxy / production:8080 {
+    transparent
+  }
+  gzip
+}
+staging.example.com {
+  tls example@gmail.com
+
+  log /var/log/caddy.log
+
+  proxy / staging:8001 {
+    transparent
+  }
+  gzip
+}

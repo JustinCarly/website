@@ -1,0 +1,50 @@
+@import 'variables';
+
+input.parsley-success,
+select.parsley-success,
+textarea.parsley-success {
+  color: #468847;
+  background-color: #DFF0D8;
+  border: 1px solid #D6E9C6;
+}
+
+input.parsley-error,
+select.parsley-error,
+textarea.parsley-error {
+  color: #B94A48;
+  background-color: #F2DEDE;
+  border: 1px solid #EED3D7;
+}
+
+.parsley-errors-list {
+  margin: 0.5rem 0 0.7rem;
+  padding: 0.5rem;
+  font-size: 0.9em;
+  line-height: 0.9em;
+  opacity: 0;
+  list-style: none;
+
+  transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+
+  li{
+    color: $error-text-colour;
+    text-indent: -.7em;
+    font-size: 1.75rem;
+    line-height: normal;
+    padding:1.5rem;
+    border-radius: 4px;
+    background-color: $content-background;
+  }
+
+  li::before{
+    content: "• ";
+    color: $error-text-colour;
+  }
+}
+
+.parsley-errors-list.filled {
+  opacity: 1;
+}

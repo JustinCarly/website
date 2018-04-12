@@ -1,0 +1,44 @@
+footer.footer.pb-4
+  .container-fluid
+    .row
+      .col-sm-8
+        h5.footerHeader Community / Contact Us
+        .row
+          .col-6.mt-2
+            a.pl-3(href="#") 
+              span.mr-1
+                i.fab.fa-github
+              span.comingSoon(data-initialText="Github") Github
+          .col-6.mt-2
+            a(href="#")
+              span.mr-1
+                i.fab.fa-twitter
+              span.comingSoon(data-initialText="Twitter") Twitter
+        .row
+          .col-6.mt-2
+            a.pl-3(href="#")
+              span.mr-1
+                i.fab.fa-facebook
+              span.comingSoon(data-initialText="Facebook") Facebook
+          .col-6.mt-2
+            a(href="#")
+              span.mr-1
+                i.fab.fa-bitcoin
+              span.comingSoon(data-initialText="Bitcoin Talk") Bitcoin Talk
+      .col-sm-4.pl-4
+        h5.footerHeader License
+        .row
+          .col
+            .pl-3
+              i.far.fa-copyright.mr-1
+              img.mr-1(style="	width: 64px;" src="/images/logo/logo.svg" alt="BrandLogoHere")
+              script(type="text/javascript").
+                document.write(new Date().getUTCFullYear());
+              |  All Rights Reserved.
+// Main Bundled Javascript
+script(type="text/javascript" src="/js/bundle.js")
+script(type="text/javascript").
+  //Function below is required, called when user successfully selects captcha, to pass front end validation check
+  function recaptchaCallback() {
+  document.getElementById('captchaField').value = 'nonEmpty';
+  };

@@ -1,0 +1,53 @@
+
+$xl: 1200px;
+$lg: 992px;
+$md: 768px;
+$sm: 576px;
+$xs: 482px;
+
+$nav-opacity: 0.75;
+
+$content-background: rgba(43,43,43,0.60); //Background colour to overlay the background image
+
+
+
+
+/*
+Main Navigation Variables
+ */
+$navbar-background-color-opaque: rgba(52,58,64,$nav-opacity);
+$navbar-background-color: rgb(52,58,64);
+$navbar-header-background-color: rgba(30,50,66, $nav-opacity);
+
+$navbar-padding-content-min-height: 5rem;
+$navbar-padding-content-max-height: 18rem;
+
+
+
+
+/*
+Colour pallete goes here
+ */
+$primary-text: rgba(255,255,255,0.88);
+$secondary-text: rgba(255,255,255,0.7);
+$disabled-text: rgba(255,255,255,0.5);
+$input-primary-text: rgba(0,0,0,0.87);
+$input-secondary-text: rgba(0,0,0,0.57);
+
+$primary-colour: #990000;
+$accent-colour: #009999;
+
+$error-text-colour: rgba(153,26,0, 0.78);
+
+
+
+
+/*
+Sidebar Variables
+ */
+$sidebarWidth: 15.625rem;
+$mdSidebarWidth: 12.45rem;
+$smSidebarWidth: 9.275rem;
+
+
+//#1e2232

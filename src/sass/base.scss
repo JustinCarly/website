@@ -1,0 +1,104 @@
+@import 'variables';
+html, body{
+  height: 97%;
+}
+
+.wrapper {
+  display: flex;
+  align-items: stretch;
+  min-height: 100%;
+
+  @media (max-width: $xs) {
+    display: block;
+  }
+}
+
+body{
+  background-color: #060606;
+  webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: $primary-text;
+  
+  
+  //background-color:#F4F4F4;
+
+  a{
+    color: $secondary-text;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+  }
+  a:hover{
+    color:	$accent-colour;
+  }
+  .dropdown-item{
+    color: $secondary-text;
+  }
+  
+  /* button styles  
+   */
+  button{
+    display: inline-block;
+    font-weight: 400;
+    background-color: $primary-colour;
+    color: $primary-text;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+  button:hover{
+    background-color: $accent-colour;
+    color: $secondary-text;
+    cursor: pointer;
+  }
+}
+
+
+
+
+.paddingContent.menuInactive{
+    height: $navbar-padding-content-min-height;
+    transition: all 0.3s;
+  }
+.paddingContent.menuActive{
+  height: $navbar-padding-content-max-height;
+  transition: all 0.3s;
+}
+
+  @media (min-width: $lg) {
+    .paddingContent.menuInactive{
+      height: $navbar-padding-content-min-height;
+      transition: all 0.3s;
+    }
+    .paddingContent.menuActive{
+      height: $navbar-padding-content-min-height;
+      transition: all 0.3s;
+    }
+  }
+
+
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+#content{
+  flex-grow:1;
+}
+
+.invalid {
+  border-color: rgb(185, 74, 72);
+  background-color: rgba(185, 74, 72, 0.1);
+}

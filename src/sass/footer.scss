@@ -1,0 +1,28 @@
+@import 'variables';
+
+//.fix-bottom{
+//  @media (min-width: 992px) and (min-height: 715px){
+//    position: fixed;
+//    right: 0;
+//    bottom: 0;
+//    left: 0;
+//    z-index: 1030;
+//  }
+//}
+.footer{
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-height: 3.8rem;
+  background-color: $navbar-background-color-opaque;
+  color: $secondary-text;
+  h5{
+    padding: 1em 1em;
+  }
+
+  li{
+    padding: 1em 1em;
+    list-style: none;
+  }
+}

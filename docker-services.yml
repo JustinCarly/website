@@ -1,0 +1,16 @@
+version: "2"
+services:
+  caddy:
+    image: abiosoft/caddy:latest
+    restart: always
+    container_name: caddy
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - "./Caddyfile:/etc/Caddyfile"
+      - "./.caddy:/root/.caddy"
+networks:
+  default:
+    external:
+      name: service-tier

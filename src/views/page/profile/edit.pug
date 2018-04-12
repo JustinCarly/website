@@ -1,0 +1,27 @@
+extends ../../_layout/layout.pug
+block content
+  main.container
+    include ../../_includes/error.pug
+    .row.mt-5.mb-5.pt-5
+      .col-sm
+        h1 Edit Profile
+        form(action="/profile/edit", method="post")
+          .form-row
+            .form-group.col-md-6
+              label(for="inputFirstName4") First Name
+              input#inputFirstName4.form-control(type="type", value=user.first_name ? user.first_name : '', name="first_name",
+              placeholder="Enter First Name")
+            .form-group.col-md-6
+              label(for="inputLastName") Last Name
+              input#inputLastName.form-control(type="type", value=user.last_name ? user.last_name : '', name="last_name",
+              placeholder="Enter Last Name")
+          .form-group
+            label(for="inputUsername") Username
+            input#inputUsername.form-control(type="text", name="user_name", value=user.user_name ? user.user_name : '',
+            placeholder="Enter Username")
+          .form-row
+            .form-group
+              .form-check
+                input#gridCheck.form-check-input(type="checkbox", name="subscribe" checked=user.subscribe)
+                label.form-check-label(for="gridCheck") Subscribe for Newsletter
+          button.btn.btn-primary(type="submit") Update

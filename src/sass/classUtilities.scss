@@ -1,0 +1,46 @@
+@import 'variables'; 
+
+.accent-color{
+  background-color: $accent-colour;
+}
+
+.primary-color{
+  background-color: $primary-colour;
+  :hover{
+    background-color: $accent-colour;
+  }
+}
+
+.primary-text{
+  color: $primary-text;
+}
+
+.secondary-text{
+  color: $secondary-text;
+}
+
+.disabled{
+  color: $disabled-text !important;
+}
+
+.form-control {
+  
+  color:$input-primary-text;
+  background-color:$primary-text;
+}
+.opaque-background {
+  padding:1.5rem;
+  border-radius: 4px;
+  background-color: $content-background;
+}
+.footerHeader{
+  color: $primary-text;
+  padding-bottom:0.5rem;
+  text-align: center;
+  border-bottom: 1px solid;
+  border-color: $secondary-text;
+}
+
+.carousel,.item,.active{height:100%;}
+.carousel-inner{height:100%;}
+

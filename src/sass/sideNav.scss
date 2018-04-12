@@ -1,0 +1,121 @@
+@import 'variables';
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+#sidebar-wrapper{
+  display: inline-block;
+}
+
+#sidebar {
+  padding-left:0px !important;
+  padding-right:0px !important;
+  min-height: 100vh;
+  min-width: $sidebarWidth;
+  max-width: $sidebarWidth;
+  background: $navbar-background-color-opaque;
+  color: $primary-text;
+  transition: all 0.3s;
+  
+  @media (max-width: $md){
+    min-width: $mdSidebarWidth;
+    max-width: $mdSidebarWidth;
+  }
+  @media (max-width: $sm) {
+    min-width: $smSidebarWidth;
+    max-width: $smSidebarWidth;
+  }
+  @media (max-width: $xs){
+    min-width: 90%;
+    max-width: 90%;
+  }
+}
+
+#sidebar.active {
+  margin-left: -$sidebarWidth; //This forces the sidebar to hide.
+  @media(max-width: $md){ //This forces it to stay out..
+    margin-left: 0;
+  }
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+  background: $navbar-header-background-color;
+}
+
+#sidebar ul.components {
+  padding: 20px 0;
+  border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+  color: $primary-text;
+  padding: 10px;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+}
+#sidebar ul li a:hover {
+  color: $secondary-text;
+  background: $accent-colour;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+  background: $primary-colour;
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+  content: '\e259';
+  display: block;
+  position: absolute;
+  right: 20px;
+  font-family: 'Glyphicons Halflings';
+  font-size: 0.6em;
+}
+a[aria-expanded="true"]::before {
+  content: '\e260';
+}
+
+
+ul ul a {
+  font-size: 0.9em !important;
+  padding-left: 30px !important;
+  background: $primary-colour;
+}
+
+ul.CTAs {
+  padding: 20px;
+}
+
+ul.CTAs a {
+  text-align: center;
+  font-size: 0.9em !important;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+a.download {
+  background: $primary-colour;
+  color: $primary-text;
+}
+
+a.article, a.article:hover {
+  background: $primary-colour;
+  color: $primary-text;
+}
+
+#sidebarCollapse{
+  display: inline-flex;
+  width:5.0rem;
+  margin-top:50vh;
+}
+

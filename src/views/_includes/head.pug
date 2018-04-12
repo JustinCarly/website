@@ -1,0 +1,35 @@
+// Metadata
+meta(charset="utf-8")
+title NDX | #{title}
+meta(name="description" content="T")
+meta(name="keywords" content="")
+meta(name="author" content="JustinCarly")
+meta(name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0")
+
+//IMPORTANT!!!!!!!!!! REMOVE THIS LATER WHEN WANT SITE INDEXED!!!!!!!!!!!!!!!!
+meta(name='robots' content='noindex')
+
+// Stylesheets and Analytics
+if production
+	link(rel="stylesheet" href="/stylesheets/bundle.css")
+	// Global site tag (gtag.js) - Google Analytics
+	// need to change this to my own again.
+	//script(async="" src="https://www.googletagmanager.com/gtag/js?id=UA-113889962-1")
+	//script.
+	//	window.dataLayer = window.dataLayer || [];
+	//	function gtag() {
+	//		dataLayer.push(arguments);
+	//	}
+	//	gtag('js', new Date());
+	//	gtag('config', 'UA-113889962-1');
+	// End Google Analytics
+else
+	link(rel="stylesheet" href="/stylesheets/bootstrap.min.css")
+	link(rel="stylesheet" href="/stylesheets/animate.min.css")
+	link(rel="stylesheet" href="/stylesheets/base.css")
+	link(rel="stylesheet" href="/stylesheets/MainNav.css")
+	link(rel="stylesheet" href="/stylesheets/sideNav.css")
+	link(rel="stylesheet" href="/stylesheets/footer.css")
+	link(rel="stylesheet" href="/stylesheets/intlTelInput.css")
+	link(rel="stylesheet" href="/stylesheets/formValidation.css")
+	link(rel="stylesheet" href="/stylesheets/classUtilities.css")

@@ -1,0 +1,6 @@
+extends ../../_layout/layout
+block content
+  main.container
+    .row.mt-5.mb-5.pt-5
+      .col-sm
+        h1 Welcome back #{user.user_name ? user.user_name : user.email}
